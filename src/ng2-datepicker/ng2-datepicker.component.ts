@@ -50,7 +50,7 @@ export interface IDatePickerOptions {
   selectYearText?: string;
   todayText?: string;
   clearText?: string;
-  isReadOnly: boolean;
+  isReadOnly?: boolean;
 }
 
 export class DatePickerOptions {
@@ -65,7 +65,7 @@ export class DatePickerOptions {
   selectYearText?: string;
   todayText?: string;
   clearText?: string;
-  isReadOnly: boolean;
+  isReadOnly?: boolean;
 
   constructor(obj?: IDatePickerOptions) {
     this.autoApply = (obj && obj.autoApply === true) ? true : false;
